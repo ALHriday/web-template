@@ -1,0 +1,291 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: sans-serif;
+}
+.navbar-main{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(46, 70, 70);
+    padding: 10px 40px;
+   
+}
+.navbar-main a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.dropdown-content a:hover{
+    background-color: crimson;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar a{
+    padding: 10px;
+}
+.nav-right a{
+    border: 1px solid rgba(255, 255, 255, 0.644);
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgba(255, 166, 0, 0.945);
+    border-radius: 5px;
+    border: none;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    padding-right: 20px;
+    color: white;
+}
+.option{
+    padding: 5px 7px;
+    font-size: 28px;
+    font-weight: 900;
+    color: white;
+    display: none;
+    transition: 1s ease;
+}
+.option:hover, .dropC a:hover, .nav-right a:hover{
+    background-color: crimson;
+    
+}
+.dropC{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.767);
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 1;
+    padding-bottom: 10px;
+    
+}
+.dropC a{
+    width: 100%;
+    text-align: center;
+    padding: 5px 0px;
+    transition: 0.7s ease;
+}
+.option:hover .dropC{
+    display: flex;
+    transition: 0.7s ease;
+}
+.nav-botom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.nav-botom a{
+    background-color: orange;
+    width: 110px;
+    display: flex;
+    padding: 5px 7px;
+    border-radius: 5px;
+    text-align: center;
+}
+.sec2-main{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    background-color: rgb(62, 109, 109);
+}
+.sec2-main p{
+    color: white;
+}
+.sec2-1{
+    width: 50%;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+}
+.sec2-1-btn button{
+    padding: 5px 7px;
+    border: none;
+}
+.btn1{
+    background-color: aqua;
+}
+.sec2-2{
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    position: relative;
+}
+
+.sec3-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+}
+.sec3-main h1{
+    font-size: 33px;
+}
+
+.sec4-main{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.sec4-main div{
+    width: 200px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgb(1, 39, 39);
+    color: white;
+    border-radius: 5px;
+}
+.sec4-main div > p:nth-child(2){
+    font-size: 18px;
+}
+.sec4-main div > p:nth-child(3){
+    color: rgba(255, 255, 255, 0.774);
+}
+.sec4-main div i{
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+.sec5-main{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(1, 48, 48);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.sec5-1{
+    width: 45%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding: 10px;
+}
+.sec5-1 button{
+    width: 100px;
+    padding: 7px;
+    font-size: 15px;
+    background-color: aqua;
+    border: none;
+}
+.sec5-2{
+    width: 45%;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec6-main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 20px 10px;
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgb(0, 110, 110);
+    color: white;
+}
+.sec6-main div{
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 5px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.233);
+    border-radius: 2px;
+}
+
+.sec6-main div > p:first-child{
+    font-size: 18px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.582);
+}
+
+.last{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    color: white;
+    background-color: rgb(1, 48, 48);
+    padding: 15px 0px;
+    border-top: 2px solid rgba(255, 255, 255, 0.76);
+}
+.last > p:last-child{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar-main{
+        padding: 5px 10px;
+    }
+    .navbar-main a{
+        font-size: 15px;
+    }
+    .navbar{
+        display: flex;
+    }
+    .navbar a{
+        padding: 7px 5px;
+    }
+    .dropdown-content{
+        display: none;
+    }
+    .nav-right{
+        display: none;
+    }
+    .nav-right a{
+        border: 1px solid rgba(255, 255, 255, 0.644);
+        padding: 5px 7px;
+        font-size: 14px;
+    }
+    .logo{
+        font-size: 30px;
+        font-weight: 500;
+        padding-right: 10px;
+        color: white;
+    }
+    .option{
+        display: flex;
+    }
+    .sec4-main div{
+        width: 180px;
+        padding: 10px;
+        gap: 5px;
+    }
+   
+
+}
